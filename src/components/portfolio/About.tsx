@@ -46,7 +46,7 @@ const About = () => {
                   Growing up, I was fascinated by how digital experiences could evoke real emotions.
                   My background in fashion design taught me the importance of texture and materiality,
                   which I now bring into interactive systems. I believe technology should feel{" "}
-                  <span className="text-primary font-semibold">warm, not cold</span>. Through game design
+                  <span className="font-semibold">warm, not cold</span>. Through game design
                   and embodied AI, I strive to create experiences that comfort, challenge, and connect people.
                 </p>
               </div>
