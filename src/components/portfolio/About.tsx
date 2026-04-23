@@ -28,7 +28,7 @@ const About = () => {
             <div className="grid gap-12 md:grid-cols-2">
               <div className="space-y-6">
                 <h3 className="font-display text-4xl font-bold text-primary md:text-5xl">
-                  Wang Yifei
+                  Yifei Wang
                   <span className="block font-body text-base font-normal text-gray-soft mt-2">王艺菲 · Female</span>
                 </h3>
 
