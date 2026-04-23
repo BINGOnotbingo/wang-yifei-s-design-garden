@@ -152,7 +152,7 @@ const Hero = () => {
           style={{ animationDelay: "0.3s", opacity: 0 }}
         >
           Wang Yifei
-          <span className="block text-primary">— Game & Interaction Designer</span>
+          <span className="block text-primary">— Information Design Portfolio</span>
         </h1>
 
         <p
