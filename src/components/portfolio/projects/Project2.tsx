@@ -8,7 +8,7 @@ const Project2 = () => {
     <ProjectShell
       id="project-2"
       number="02"
-      title="Embodied AI Companion"
+      title="AI-Based Multimodal Empathy Adolescent Embodied Intelligent Emotional Companion Pet"
       subtitle="Adolescent Mental Health · Multimodal Empathy"
     >
       <Tabs defaultValue="overview" className="w-full">
@@ -29,7 +29,7 @@ const Project2 = () => {
               </div>
               <h3 className="font-display text-3xl font-bold text-foreground">Spherical AI Companion</h3>
               <p className="mt-3 text-sm text-gray-soft">
-                Authors: <span className="font-bold text-primary">Wang Yifei</span>, Zhang Xuanyue, Li Tianyu, Huang Can, Liu Zhuo, Zhou Ying
+                Authors: <span className="font-bold text-primary">Yifei Wang</span>, Zhang Xuanyue, Li Tianyu, Huang Can, Liu Zhuo, Zhou Ying
               </p>
               <p className="mt-6 text-foreground leading-relaxed">
                 A lightweight, ball-shaped companion that uses visual, auditory, and tactile data to recognise emotions.
