@@ -151,7 +151,7 @@ const Hero = () => {
           className="font-display text-5xl font-bold leading-[1.05] tracking-tight text-foreground md:text-7xl lg:text-8xl animate-fade-in"
           style={{ animationDelay: "0.3s", opacity: 0 }}
         >
-          Wang Yifei
+          Yifei Wang
           <span className="block text-primary">— Information Design Portfolio</span>
         </h1>
 
