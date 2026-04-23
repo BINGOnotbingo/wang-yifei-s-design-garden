@@ -12,7 +12,7 @@ const projects = [
   },
   {
     number: "02",
-    title: "Embodied AI Companion",
+    title: "AI-Based Multimodal Empathy Adolescent Embodied Intelligent Emotional Companion Pet",
     keywords: ["Adolescent Mental Health", "Embodied Intelligence", "Multimodal Empathy"],
     description: "A spherical wearable companion that recognises emotions through vision, voice, and touch — providing low-pressure emotional support.",
     icon: Bot,

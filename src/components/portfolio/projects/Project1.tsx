@@ -67,7 +67,7 @@ const Project1 = () => {
               </div>
               <h3 className="font-display text-3xl font-bold text-foreground">Focus: Information Maze</h3>
               <p className="mt-3 text-sm text-gray-soft">
-                Authors: <span className="font-bold text-primary">Yifei Wang</span>, Zhang Xuanyue, Li Tianyu, Huang Can, Liu Zhuo, Zhou Ying
+                Authors: <span className="font-bold text-primary">Yifei Wang</span>
               </p>
               <p className="mt-6 text-foreground leading-relaxed">
                 You are an investigator entering a house where a victim collapsed from information overload. A 5-minute countdown starts.
