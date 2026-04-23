@@ -1,16 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/portfolio/Hero";
+import Divider from "@/components/portfolio/Divider";
+import About from "@/components/portfolio/About";
+import Projects from "@/components/portfolio/Projects";
+import Project1 from "@/components/portfolio/projects/Project1";
+import Project2 from "@/components/portfolio/projects/Project2";
+import Project3 from "@/components/portfolio/projects/Project3";
+import Project4 from "@/components/portfolio/projects/Project4";
+import Footer from "@/components/portfolio/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="bg-background text-foreground">
+      <Hero />
+      <Divider id="about-divider" title="About Me" />
+      <About />
+      <Divider id="works-divider" title="Selected Works" />
+      <Projects />
+      <Project1 />
+      <Project2 />
+      <Project3 />
+      <Project4 />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
