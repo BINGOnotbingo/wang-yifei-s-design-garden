@@ -143,7 +143,7 @@ const Hero = () => {
         <div className="mb-6 flex items-center justify-center gap-3 animate-fade-in" style={{ animationDelay: "0.1s", opacity: 0 }}>
           <span className="h-2 w-2 rounded-full bg-primary animate-pulse-dot" />
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-gray-soft">
-            Portfolio · 2025
+            Portfolio · 2026
           </span>
         </div>
 
