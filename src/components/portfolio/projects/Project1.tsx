@@ -3,6 +3,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Placeholder from "../Placeholder";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import overview1 from "@/assets/project1-overview-1.png";
+import overview2 from "@/assets/project1-overview-2.png";
+import overview3 from "@/assets/project1-overview-3.png";
 import {
   Gamepad2,
   Brain,
@@ -200,9 +203,9 @@ rawImage.texture = rt;`}
 const OverviewCarousel = () => {
   const autoplay = useRef(Autoplay({ delay: 2800, stopOnInteraction: false, stopOnMouseEnter: true }));
   const slides = [
-    { label: "Game Screenshot 01" },
-    { label: "Game Screenshot 02" },
-    { label: "Game Screenshot 03" },
+    { src: overview1, label: "Dining Room Scene" },
+    { src: overview2, label: "Living Room Scene" },
+    { src: overview3, label: "Bedroom Scene" },
   ];
   return (
     <Carousel
@@ -213,7 +216,9 @@ const OverviewCarousel = () => {
       <CarouselContent>
         {slides.map((s, i) => (
           <CarouselItem key={i}>
-            <Placeholder icon={Gamepad2} label={s.label} aspect="aspect-[4/3]" />
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border border-primary/20 bg-secondary">
+              <img src={s.src} alt={s.label} className="h-full w-full object-cover" loading="lazy" />
+            </div>
           </CarouselItem>
         ))}
       </CarouselContent>
