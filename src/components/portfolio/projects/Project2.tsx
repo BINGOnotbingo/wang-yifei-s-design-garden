@@ -2,6 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Placeholder from "../Placeholder";
 import ProjectShell from "./ProjectShell";
 import { Bot, Cpu, Gamepad2, ShieldCheck, Users, School, BookOpen } from "lucide-react";
+import project2Overview from "@/assets/project2-overview.png";
 
 const Project2 = () => {
   return (
