@@ -3,6 +3,7 @@ import Placeholder from "../Placeholder";
 import ProjectShell from "./ProjectShell";
 import { Bot, Cpu, Gamepad2, ShieldCheck, Users, School, BookOpen } from "lucide-react";
 import project2Overview from "@/assets/project2-overview.png";
+import project2Hardware from "@/assets/project2-hardware.jpg";
 
 const Project2 = () => {
   return (
@@ -88,7 +89,9 @@ const Project2 = () => {
                 <p className="text-sm text-gray-soft">Multimodal fusion of vision (expression), audio (prosody), and touch (pressure) — developed in-house.</p>
               </div>
             </div>
-            <Placeholder icon={Bot} label="Hardware Diagram" aspect="aspect-square" />
+            <div className="relative aspect-square w-full overflow-hidden rounded-lg border border-primary/20 bg-secondary">
+              <img src={project2Hardware} alt="Spherical companion device clipped on a backpack" className="h-full w-full object-cover" loading="lazy" />
+            </div>
           </div>
         </TabsContent>
 
