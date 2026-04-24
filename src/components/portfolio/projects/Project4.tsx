@@ -1,9 +1,12 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Placeholder from "../Placeholder";
 import ProjectShell from "./ProjectShell";
-import { Cpu, Sun, Moon, Hand, Sprout, Network } from "lucide-react";
+import { Cpu, Sprout, Network } from "lucide-react";
 import echoOverview from "@/assets/echo-overview.png";
 import echoStructure from "@/assets/echo-structure.jpg";
+import echoEffect1 from "@/assets/echo-effect-1.png";
+import echoEffect2 from "@/assets/echo-effect-2.png";
+import echoEffect3 from "@/assets/echo-effect-3.png";
 
 const Project4 = () => {
   return (
@@ -74,18 +77,11 @@ const Project4 = () => {
 
         <TabsContent value="effects" className="animate-fade-in">
           <div className="grid gap-6 md:grid-cols-3">
-            <div className="space-y-3">
-              <Placeholder icon={Sun} label="Daytime View" aspect="aspect-[4/3]" />
-              <p className="text-sm text-gray-soft text-center">Daytime · soft natural light reveals organic textures.</p>
-            </div>
-            <div className="space-y-3">
-              <Placeholder icon={Moon} label="Night View" aspect="aspect-[4/3]" />
-              <p className="text-sm text-gray-soft text-center">Night · built-in LED strips bloom from inside the flowers.</p>
-            </div>
-            <div className="space-y-3">
-              <Placeholder icon={Hand} label="Interaction Close-up" aspect="aspect-[4/3]" />
-              <p className="text-sm text-gray-soft text-center">Touch · the flower opens in response to a hand.</p>
-            </div>
+            {[echoEffect1, echoEffect2, echoEffect3].map((src, i) => (
+              <div key={i} className="aspect-[4/3] w-full overflow-hidden rounded-lg border border-primary/20">
+                <img src={src} alt={`Echo Garden effect ${i + 1}`} className="h-full w-full object-cover" />
+              </div>
+            ))}
           </div>
         </TabsContent>
 
