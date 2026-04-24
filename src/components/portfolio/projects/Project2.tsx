@@ -39,7 +39,9 @@ const Project2 = () => {
                 it helps adolescents manage anxiety and depression.
               </p>
             </div>
-            <Placeholder icon={Bot} label="Product Rendering" aspect="aspect-square" />
+            <div className="relative aspect-square w-full overflow-hidden rounded-lg border border-primary/20 bg-secondary flex items-center justify-center p-4">
+              <img src={project2Overview} alt="Adolescent embodied empathy companion system overview" className="h-full w-full object-contain" loading="lazy" />
+            </div>
           </div>
         </TabsContent>
 
