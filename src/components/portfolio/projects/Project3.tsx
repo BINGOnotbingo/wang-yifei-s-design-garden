@@ -4,6 +4,11 @@ import Placeholder from "../Placeholder";
 import ProjectShell from "./ProjectShell";
 import { Smile, Frown, Angry, Meh, Camera, Sparkles, AlertCircle } from "lucide-react";
 import project3Overview from "@/assets/project3-overview.png";
+import memeAngry from "@/assets/meme-angry.jpg";
+
+const memeImages: Record<string, string> = {
+  angry: memeAngry,
+};
 
 const emotions = [
   { id: "angry", label: "Angry", icon: Angry, meme: "Furrowed brow, sharp lines radiating outward" },
@@ -100,7 +105,13 @@ const Project3 = () => {
               </div>
             </div>
             <div className="rounded-lg border border-primary/30 bg-card p-6 animate-scale-in" key={selected.id}>
-              <Placeholder icon={selected.icon} label={`${selected.label} — McCloud Face`} aspect="aspect-square" />
+              {memeImages[selected.id] ? (
+                <div className="relative aspect-square w-full overflow-hidden rounded-lg border border-primary/20 bg-secondary flex items-center justify-center p-4">
+                  <img src={memeImages[selected.id]} alt={`${selected.label} — McCloud meme face`} className="h-full w-full object-contain" loading="lazy" />
+                </div>
+              ) : (
+                <Placeholder icon={selected.icon} label={`${selected.label} — McCloud Face`} aspect="aspect-square" />
+              )}
               <h4 className="mt-4 font-display text-2xl font-bold text-primary">{selected.label}</h4>
               <p className="mt-2 text-sm italic text-gray-soft">"{selected.meme}"</p>
             </div>
