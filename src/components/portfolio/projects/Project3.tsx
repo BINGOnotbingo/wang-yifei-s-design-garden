@@ -5,9 +5,11 @@ import ProjectShell from "./ProjectShell";
 import { Smile, Frown, Angry, Meh, Camera, Sparkles, AlertCircle } from "lucide-react";
 import project3Overview from "@/assets/project3-overview.png";
 import memeAngry from "@/assets/meme-angry.jpg";
+import memeHappy from "@/assets/meme-happy.jpg";
 
 const memeImages: Record<string, string> = {
   angry: memeAngry,
+  happy: memeHappy,
 };
 
 const emotions = [
