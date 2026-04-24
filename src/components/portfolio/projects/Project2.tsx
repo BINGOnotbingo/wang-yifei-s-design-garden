@@ -2,6 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Placeholder from "../Placeholder";
 import ProjectShell from "./ProjectShell";
 import { Bot, Cpu, Gamepad2, ShieldCheck, Users, School, BookOpen } from "lucide-react";
+import project2Overview from "@/assets/project2-overview.png";
 
 const Project2 = () => {
   return (
@@ -38,7 +39,9 @@ const Project2 = () => {
                 it helps adolescents manage anxiety and depression.
               </p>
             </div>
-            <Placeholder icon={Bot} label="Product Rendering" aspect="aspect-square" />
+            <div className="relative aspect-square w-full overflow-hidden rounded-lg border border-primary/20 bg-secondary flex items-center justify-center p-4">
+              <img src={project2Overview} alt="Adolescent embodied empathy companion system overview" className="h-full w-full object-contain" loading="lazy" />
+            </div>
           </div>
         </TabsContent>
 
