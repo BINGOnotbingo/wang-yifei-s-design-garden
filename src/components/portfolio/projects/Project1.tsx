@@ -144,10 +144,11 @@ const Project1 = () => {
                       <X className="h-4 w-4" />
                     </button>
                   </div>
-                  {active === "opening" ? (
+                  {(active === "opening" || active === "living") ? (
                     <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border border-primary/20 bg-secondary">
                       <video
-                        src="/project1-diary-opening.mp4"
+                        key={active}
+                        src={active === "opening" ? "/project1-diary-opening.mp4" : "/project1-diary-living.mp4"}
                         className="h-full w-full object-cover"
                         autoPlay
                         loop
