@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Placeholder from "../Placeholder";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Gamepad2,
   Brain,
@@ -75,7 +77,7 @@ const Project1 = () => {
                 Find five diary fragments to reveal the victim's mental breakdown and learn how to protect your own attention.
               </p>
             </div>
-            <Placeholder icon={Gamepad2} label="Game Screenshot" aspect="aspect-[4/3]" />
+            <OverviewCarousel />
           </div>
         </TabsContent>
 
@@ -192,6 +194,30 @@ rawImage.texture = rt;`}
         </TabsContent>
       </Tabs>
     </ProjectShell>
+  );
+};
+
+const OverviewCarousel = () => {
+  const autoplay = useRef(Autoplay({ delay: 2800, stopOnInteraction: false, stopOnMouseEnter: true }));
+  const slides = [
+    { label: "Game Screenshot 01" },
+    { label: "Game Screenshot 02" },
+    { label: "Game Screenshot 03" },
+  ];
+  return (
+    <Carousel
+      opts={{ loop: true, align: "start", direction: "ltr" }}
+      plugins={[autoplay.current]}
+      className="w-full"
+    >
+      <CarouselContent>
+        {slides.map((s, i) => (
+          <CarouselItem key={i}>
+            <Placeholder icon={Gamepad2} label={s.label} aspect="aspect-[4/3]" />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
   );
 };
 
