@@ -29,6 +29,12 @@ const diaryFragments: Record<string, { title: string; text: string }> = {
   study: { title: "Study", text: "I turned off all notifications. Finally heard my child laugh." },
 };
 
+const diaryVideos: Record<string, string> = {
+  opening: "/project1-diary-opening.mp4",
+  living: "/project1-diary-living.mp4",
+  baby: "/project1-diary-baby.mp4",
+};
+
 const points = [
   { id: "opening", x: 50, y: 10, label: "Opening" },
   { id: "living", x: 25, y: 35, label: "Living Room" },
