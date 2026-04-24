@@ -146,7 +146,14 @@ const Project1 = () => {
                   </div>
                   {active === "opening" ? (
                     <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border border-primary/20 bg-secondary">
-                      <img src={diaryOpening} alt="Opening Cutscene" className="h-full w-full object-cover" loading="lazy" />
+                      <video
+                        src="/project1-diary-opening.mp4"
+                        className="h-full w-full object-cover"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      />
                     </div>
                   ) : (
                     <Placeholder icon={Gamepad2} label="Diary Page Screenshot" aspect="aspect-[4/3]" />
