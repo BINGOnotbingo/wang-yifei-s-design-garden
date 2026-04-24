@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Placeholder from "../Placeholder";
 import ProjectShell from "./ProjectShell";
 import { Smile, Frown, Angry, Meh, Camera, Sparkles, AlertCircle } from "lucide-react";
+import project3Overview from "@/assets/project3-overview.png";
 
 const emotions = [
   { id: "angry", label: "Angry", icon: Angry, meme: "Furrowed brow, sharp lines radiating outward" },
@@ -34,7 +35,9 @@ const Project3 = () => {
 
         <TabsContent value="overview" className="animate-fade-in">
           <div className="grid items-center gap-10 md:grid-cols-2">
-            <Placeholder icon={Camera} label="Live Detection Demo" aspect="aspect-[4/3]" />
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border border-primary/20 bg-secondary">
+              <img src={project3Overview} alt="Face-to-Meme generator overview — neural face visualization" className="h-full w-full object-cover" loading="lazy" />
+            </div>
             <div>
               <div className="mb-4 flex flex-wrap gap-2">
                 {["Facial Emotion Recognition", "Vision Transformer", "Meme Generation"].map(k => (
