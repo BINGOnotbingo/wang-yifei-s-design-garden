@@ -1,7 +1,9 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Placeholder from "../Placeholder";
 import ProjectShell from "./ProjectShell";
-import { Flower2, Cpu, Sun, Moon, Hand, Sprout, Network } from "lucide-react";
+import { Cpu, Sun, Moon, Hand, Sprout, Network } from "lucide-react";
+import echoOverview from "@/assets/echo-overview.png";
+import echoStructure from "@/assets/echo-structure.jpg";
 
 const Project4 = () => {
   return (
@@ -20,7 +22,9 @@ const Project4 = () => {
         </TabsList>
 
         <TabsContent value="overview" className="animate-fade-in">
-          <Placeholder icon={Flower2} label="Installation — Hero Shot" aspect="aspect-[16/7]" />
+          <div className="aspect-[16/7] w-full overflow-hidden rounded-lg border border-primary/20">
+            <img src={echoOverview} alt="Echo Garden installation hero shot" className="h-full w-full object-cover" />
+          </div>
           <div className="mt-8 grid gap-8 md:grid-cols-3">
             <div className="md:col-span-1">
               <div className="flex flex-wrap gap-2">
@@ -40,7 +44,9 @@ const Project4 = () => {
 
         <TabsContent value="structure" className="animate-fade-in">
           <div className="grid items-start gap-10 md:grid-cols-2">
-            <Placeholder icon={Cpu} label="Exploded View Diagram" aspect="aspect-square" />
+            <div className="aspect-square w-full overflow-hidden rounded-lg border border-primary/20">
+              <img src={echoStructure} alt="Echo Garden exploded structure view" className="h-full w-full object-cover" />
+            </div>
             <div className="space-y-4">
               <div className="rounded-lg border border-primary/20 bg-card p-6">
                 <h4 className="mb-2 font-display text-lg font-bold text-primary">Internal Hardware</h4>
