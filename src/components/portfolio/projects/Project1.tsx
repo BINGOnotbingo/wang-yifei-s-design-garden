@@ -6,6 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 import overview1 from "@/assets/project1-overview-1.png";
 import overview2 from "@/assets/project1-overview-2.png";
 import overview3 from "@/assets/project1-overview-3.png";
+import diaryOpening from "@/assets/project1-diary-opening.png";
 import {
   Gamepad2,
   Brain,
@@ -143,7 +144,13 @@ const Project1 = () => {
                       <X className="h-4 w-4" />
                     </button>
                   </div>
-                  <Placeholder icon={Gamepad2} label="Diary Page Screenshot" aspect="aspect-[4/3]" />
+                  {active === "opening" ? (
+                    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border border-primary/20 bg-secondary">
+                      <img src={diaryOpening} alt="Opening Cutscene" className="h-full w-full object-cover" loading="lazy" />
+                    </div>
+                  ) : (
+                    <Placeholder icon={Gamepad2} label="Diary Page Screenshot" aspect="aspect-[4/3]" />
+                  )}
                   <h4 className="mt-4 font-display text-xl font-bold text-primary">{diaryFragments[active].title}</h4>
                   <p className="mt-2 italic text-foreground">"{diaryFragments[active].text}"</p>
                 </div>
