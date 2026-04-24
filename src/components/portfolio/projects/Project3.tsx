@@ -8,12 +8,18 @@ import memeAngry from "@/assets/meme-angry.jpg";
 import memeHappy from "@/assets/meme-happy.jpg";
 import memeFear from "@/assets/meme-fear.jpg";
 import memeDisgust from "@/assets/meme-disgust.jpg";
+import memeNeutral from "@/assets/meme-neutral.jpg";
+import memeSurprise from "@/assets/meme-surprise.jpg";
+import memeSad from "@/assets/meme-sad.jpg";
 
 const memeImages: Record<string, string> = {
   angry: memeAngry,
   happy: memeHappy,
   fear: memeFear,
   disgust: memeDisgust,
+  neutral: memeNeutral,
+  surprise: memeSurprise,
+  sad: memeSad,
 };
 
 const emotions = [
