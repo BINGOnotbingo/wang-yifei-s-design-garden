@@ -6,10 +6,14 @@ import { Smile, Frown, Angry, Meh, Camera, Sparkles, AlertCircle } from "lucide-
 import project3Overview from "@/assets/project3-overview.png";
 import memeAngry from "@/assets/meme-angry.jpg";
 import memeHappy from "@/assets/meme-happy.jpg";
+import memeFear from "@/assets/meme-fear.jpg";
+import memeDisgust from "@/assets/meme-disgust.jpg";
 
 const memeImages: Record<string, string> = {
   angry: memeAngry,
   happy: memeHappy,
+  fear: memeFear,
+  disgust: memeDisgust,
 };
 
 const emotions = [
